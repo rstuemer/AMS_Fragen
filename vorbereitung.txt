@@ -1,0 +1,31 @@
+Klausurvorbereitung  AMS
+
+3 Fragen Pos, lokalisationsarten, rel. pos
+Definition service Roboter
+Begriff Autonomie
+Wie können Anwendungsfelder generiert werden 
+keine Verschiedene Roboter lernen
+3 Fragen der Roboternavigation(Selbstlokalisierung)
+Positionsbestimmung Beta Omega Teta scheiß
+genaueres Verfahren zur selbstlokalisierung (Räder beobachten)
+Onometrie
+	Wie funktioniert sie
+	Sensorenarten
+	Encoderart(Graycode etc.)
+	Wie wird aus der alten Pos die neue berechnet
+	Fehlerquellen
+	relative Positionierung(Trägheitnavigation)
+	Landmarken 
+		Arten
+Lokalisierung
+	Markovlokalisierung(Wichtig)
+	Umsetzung in Aria(MonteCarlo)
+Karten
+	Arten
+Fahrplanung
+	Arten
+	Lokal			Global
+					Potenzialfelder(S.41)
+	
+	
+
