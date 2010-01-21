@@ -228,24 +228,105 @@
           </li>
         </ul>
       </li>
-      <li><strong>Probabilistische Positionierung</strong> (markov-monte carlo ), (wie in aria)</li>
+      <li><strong>Probabilistische Positionierung</strong>
+        <ul>
+          <li>leistungsfähiger, verbreiteter Ansatz<br />
+          </li>
+          <li>vereint relative und absolute Postionierung als<br />
+             Bewegungsmodellierung und Wahrnehmung der Umwelt<br />
+          </li>
+          <li>in ARIA umgesetzt in ARNL, Methode: Monte Carlo Localization</li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
 <p><br />
   <img src="x.png" /><br />
-  )<br />
 </p>
 <ul>
-  <li>was ist eine landmarke, welche arten gibt es.
-    </p>
-  </li>
-  <li>was ist eine karte, 
-        welche zwei arten gibt es<br />
+  <li>Karten (Weltmodell, eine Wissensrepräsentation)<br />
 <ul>
-          <li>geometrische<br />
+      <li><strong><em>geometrische</em> </strong><em><strong>Karten</strong></em>
+        <ul>
+          <li>Gittermodell mit euklidischen Koordinaten<br />
+          </li>
+          <li>            zusammengesetzt aus attributierten Kachelelementen<br />
+</li>
+          <li> analog Pixelbild in der Bildverarbeitung =&gt; intuitiv verständlich<br />
+</li>
+          <li> gedachtes Netz über die Umwelt</li>
+          <li>Unsicherheit abbilden: Kachelwerte aus dem Intervall [0,1]:<br />
+          </li>
+          <li>Interpretationsvarianten:<br />
+            <ul>
+              <li>z.B. evidence grids(Moravec, 1985, Navigation eines AMR mit Sonar)Gewissheit, dass sich in der Kachel ein Objekt befindet<br />
+</li>
+              <li> Wahrscheinlichkeit, dass die gesamte Kachel frei ist<br />
+</li>
+              <li> Anteilder besetzten Fläche in der Kachel ...</li>
+            </ul>
+          </li>
+          <li>Probleme: 
+            <ul>
+              <li>Kachelgröße<br />
+</li>
+              <li> Kleine Kacheln: Speicherplatz und Rechenzeit<br />
+</li>
+              <li> Große Kacheln: keine Darstellung kleiner Objekte, kleiner Freiräume<br />
+</li>
+              <li> Eine Lösung: Quadtree(flexible Auflösung)<br />
+              </li>
+            </ul>
+          </li>
+        </ul>
       </li>
-          <li>topologische karten in aria</li>
+          <li><strong><em>Topologische Karten sind Graphen</em></strong><br />
+            <ul>
+              <li>Knoten: Orte mit entscheidungsbestimmenden Situationen (Beschreibung der Orte)<br />
+              </li>
+              <li>Kanten: relative Positionen, Wege, Aktionen zwischen diesen Orten, Beziehungen =&gt; Bsp (Randow, 1998)<br />
+              </li>
+              <li>Der menschlichen Vorgehensweise ähnlicher als geometrische Karten<br />
+              </li>
+              <li>Höherer Abstraktionsgrad<br />
+              </li>
+              <li>Speicherplatzsparend<br />
+              </li>
+              <li>Anwendung: Globale Navigation, XAVIER, CMU</li>
+            </ul>
+          </li>
+          <li><strong><em>Karten in ARIA</em></strong>
+<ul>
+<li>Geometrische Karte mit topologischen Elementen<br />
+                Verwendet als<br />
+                <ul>
+                  <li>A) als Karte in ARIA (ARNL, SONARNL, Actions …) und<br />
+                    </li>
+                  <li>B) als Welt im Simulator<br />
+                    </li>
+                </ul>
+              </li>
+              <li>ASCII-File im MapFile-Format mit Endung .map<br />
+                Manuell bearbeiten oder mit Mapper3<br />
+              </li>
+              <li>Aufbau des Files:<br />
+                <ul>
+                  <li>1. Metadaten (Eigenschaften der Karte, Kartenobjekte, neue Klassen)<br />
+                    </li>
+                  <li>2. Daten<br />
+                    </li>
+                </ul>
+              </li>
+              <li>Daten = Wahrnehmbare Objekte<br />
+                <ul>
+                  <li> Punkte(für Lokalisierung mit dem Laserscanner)<br />
+</li>
+                  <li> Linien(für Lokalisierung mit den Sonarsensoren)</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
     </ul>
   </li>
   <li>fahrplanung:<br />
