@@ -6,76 +6,133 @@
 </head>
 
 <body>
-<p>klausur ams</p>
+<h1>klausur ams</h1>
 <p>3 fragen pose, lokalisierungsarten, rel.pos.</p>
-<p>odimetrie, sensoren, pqe, Codes, Bewegungsmodell, Fehlerquellen, Odemetrie, Fehlermodellierung, </p>
-<p>Folien mit zwei Schwerpunkten sind besonders wichtig</p>
-<p>(begriff autonomie, )<br />
-  (dirty)<br />
-  (anwendungsfelder)<br />
-  (drei arten der selbstlokalisierung (rel. positionierung, ..., ...))<br />
-  (rel. Positionierung: Odemetrie <br />
-  (was gibt es fuer sensoren), <br />
-  (systematische und unsystematische fehler),<br />
-  (4 massnahmen um die fehler im griff zu haben)<br />
-  Positionierung: Traegheitsvariation<br />
-  ),(<br />
-  abs. Positionierung (was ist das),<br />
-  probabilistische lok. (markov), (wie in aria)<br />
+<p>odimetrie, sensoren, pqe, Codes, Bewegungsmodell, Fehlerquellen, Odemetrie, Fehlermodellierung,</p>
+<p>
+<ul>
+  <li>erklaeren sie  Autonomie</li>
+  <li>drei arten der selbstlokalisierung 
+    <ul>
+      <li>rel. Positionierung: <strong>Odemetrie </strong>
+<ul>
+          <li>was gibt es fuer sensoren) </li>
+          <li>systematische und unsystematische fehler</li>
+          <li>4 massnahmen um die fehler im griff zu haben</li>
+        </ul>
+      </li>
+      <li>rel. Positionierung: <strong>Traegheitsvariation</strong></li>
+      <li>abs. Positionierung (was ist das)
+        <ul>
+          <li>probabilistische lok. (markov), (wie in aria)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<p><br />
   <img src="x.png" /><br />
   )<br />
-  was ist eine landmarke, welche arten gibt es.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>was ist ne karte, <br />
-  welche zwei arten<br />
-  geometrische<br />
-  topologische<br />
-  akrten in aria</p>
-<p>fahrplanung:<br />
-  lokale <br />
-  r. navigiert innerhalb seiner sensorreichweite<br />
-  und globale<br />
-  hat karte aber kann es nciht direkt sehen und plant in dieser karte</p>
-<p>kriterien fuer einen guten pfad<br />
-  2 methoden der fahrplanung<br />
-  visibility graph<br />
-  potentialfaelle (ist in aria)<br />
-  potentialfeld ausrechnen -&gt; vektorfeld ausrechnen -&gt; value iteration<br />
-  folie 41<br />
 </p>
+<ul>
+  <li>was ist eine landmarke, welche arten gibt es.
+    </p>
+  </li>
+  <li>was ist eine karte, 
+        welche zwei arten gibt es<br />
+    <ul>
+          <li>geometrische<br />
+      </li>
+          <li>topologische<br />
+      </li>
+          <li>karten in aria</li>
+    </ul>
+  </li>
+  <li>fahrplanung:<br />
+    <ul>
+      <li>lokale <br />
+      </li>
+      <li>r. navigiert innerhalb seiner sensorreichweite<br />
+      </li>
+      <li>und globale<br />
+      </li>
+      <li>hat karte aber kann es nicht direkt sehen und plant in dieser karte</li>
+    </ul>
+  </li>
+  <li>kriterien fuer einen guten pfad<br />
+  </li>
+  <li>2 methoden der fahrplanung<br />
+    <ul>
+      <li>visibility graph<br />
+      </li>
+      <li>potentialfaelle (ist in aria)<br />
+      </li>
+    </ul>
+  </li>
+  <li>potentialfeld ausrechnen -&gt; vektorfeld ausrechnen -&gt; value iteration<br />
+    folie 41<br />
+  </li>
+</ul>
 <p>------------------------------------LOOSE-----------------------------------------<br />
-  1.vorlesung<br />
-  wie ist roboter aufgebaut<br />
-  sensoren -&gt; welche sind drin<br />
-  grobe funktionsprinzipien<br />
-  simulator<br />
-  was is ne map aus sicht des simulators<br />
-  grundprinzip des arnetworking<br />
-  gps -&gt; wie fkt. es (3 satelierten und einer fuer zeit, bla)<br />
-  gps std Protokoll<br />
-  gds84 , referenzelipsuiden<br />
-  was ist utm systeme</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+  </p>
+<ul>
+  <li>	1.vorlesung<br />
+    </li>
+  <li>wie ist roboter aufgebaut<br />
+    <ul>
+      <li>sensoren -&gt; welche sind drin<br />
+        </li>
+      <li>grobe funktionsprinzipien<br />
+        </li>
+    </ul>
+  </li>
+  <li>simulator<br />
+    <ul>
+      <li>was is ne map aus sicht des simulators<br />
+        </li>
+    </ul>
+  </li>
+  <li>grundprinzip des arnetworking<br />
+    </li>
+  <li>gps -&gt; wie fkt. es (3 satelierten und einer fuer zeit, bla)<br />
+    </li>
+  <li>gps std Protokoll lesen koennen<br />
+    </li>
+  <li>gds84 , referenzelipsuiden<br />
+    </li>
+  <li>was ist utm systeme</li>
+</ul>
 <p>-------------------------------HEINSOHN-----------------------------------------</p>
-<p>aria architektur (Folie 2 Graphik lernen!!!!!)<br />
-  client server arch. mit und auch ohne arNetworking<br />
-  syncronisierungszyklus folie 23 (welche pakete werden abgeschickt mit welchem inhalt)<br />
-  -&gt; actions<br />
-  ebenen der robotersteuerung<br />
-  - direkte<br />
-  - <br />
-  -<br />
-  aktionen in aria<br />
-  allg. kontrollstruktur <br />
-  klassische(horizontal, vertikal) vs subsumtion<br />
-  Folie 22 -&gt; was passiert eigentlich wenn dort verschiedene zugriffe auf die 		kanaele erfolgen<br />
-  PRIORITAETEN + AKTIVIERUNGSGRADE (Formeln)</p>
+<ul>
+  <li>aria architektur (Folie 2 Graphik lernen!!!!!)<br />
+    </li>
+  <li>client server arch. mit und auch ohne arNetworking<br />
+    </li>
+  <li>syncronisierungszyklus folie 23 (welche pakete werden abgeschickt mit welchem inhalt)<br />
+    <ul>
+      <li>-&gt; actions<br />
+        </li>
+    </ul>
+  </li>
+  <li>3 ebenen der robotersteuerung<br />
+    <ul>
+      <li>direkte<br />
+        - <br />
+        -<br />
+        </li>
+    </ul>
+  </li>
+  <li>aktionen in aria<br />
+    </li>
+  <li>allg. kontrollstruktur <br />
+    <ul>
+      <li>klassische(horizontal, vertikal) vs subsumtion<br />
+        </li>
+      <li>Folie 22 -&gt; was passiert eigentlich wenn dort verschiedene zugriffe auf die 		kanaele erfolgen<br />
+        </li>
+      <li>PRIORITAETEN + AKTIVIERUNGSGRADE (Formeln)</li>
+    </ul>
+  </li>
+</ul>
 </body>
 </html>
