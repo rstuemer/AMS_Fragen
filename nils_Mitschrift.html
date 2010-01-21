@@ -7,6 +7,7 @@
 
 <body>
 <h1>klausur ams</h1>
+<p>-------------boersch--------------------</p>
 <p>3 fragen pose, lokalisierungsarten, rel.pos.</p>
 <p>odimetrie, sensoren, pqe, Codes, Bewegungsmodell, Fehlerquellen, Odemetrie, Fehlermodellierung,</p>
 <ul>
@@ -53,13 +54,51 @@
       </li>
     </ul>
   </li>
-  <li><strong>keine Verschiedene Roboter lernen </strong></li>
+  <li><strong>-----------keine Verschiedene Roboter lernen------------</strong></li>
   <li>3 Fragen der Roboternavigation(Selbstlokalisierung)
     <ul>
-      <li>rel. Positionierung: <strong>Odemetrie</strong>
+      <li>relative Positionierung mit internen Sensoren: <strong>Odemetrie</strong>
         <ul>
-          <li>was ist Odemetrie</li>
-          <li>Encoderart(Graycode etc.)</li>
+          <li><strong>was ist Odemetrie</strong>
+            <ul>
+              <li>Def.: Relative Positionierung mittels Beobachtung der Antriebsräder
+                <ul>
+                  <li>Antriebesabhängig</li>
+                  <li>Bsp: differentieller Antrieb</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><strong>Encoderart</strong>
+<ul>
+              <li><em>Inkrementelle Encoder: </em>
+<ul>
+                  <li>Anzeige der Bewegung einer Achse Rades durch eine Impulsfolge<br />
+                  </li>
+                  <li> Positionsverlust beim Ausschalten ==&gt; Gelenke beginnen in
+                    Endstellung<br />
+                  </li>
+                  <li> Berechnung notwendig<br />
+                  </li>
+                  <li> Bsp: Phase-Quadratur-Encoder am Pioneer</li>
+                </ul>
+              </li>
+              <li><em>Absolute Encoder:</em>
+<ul>
+                  <li> Anzeige der Position einer Achse durch eine Postionskodierung<br />
+                    </li>
+                  <li> 1 Bit/Spur ==&gt; Baugröße<br />
+                    </li>
+                  <li> Bsp: Binärcode-Encoder, GrayCode-Encoder</li>
+                </ul>
+              </li>
+              <li><em>Phase-Quadratur Encoder</em>
+                <ul>
+                  <li><em>...</em></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
           <li>Wie wird aus der alten Pos die neue berechnet + Fehlerquellen</li>
           <li>Sensorenarten</li>
           <li>systematische und unsystematische fehler</li>
@@ -67,13 +106,8 @@
           <li><strong>Traegheitsvariation</strong></li>
         </ul>
       </li>
-      <li>abs. Positionierung (was ist das)
-        <ul>
-          <ul>
-            <li>probabilistische lok. (markov-monte carlo ), (wie in aria)</li>
-          </ul>
-        </ul>
-      </li>
+      <li><strong>Absolute Positionierung anhand von Marken</strong></li>
+      <li><strong>Probabilistische Positionierung</strong> (markov-monte carlo ), (wie in aria)</li>
     </ul>
   </li>
 </ul>
