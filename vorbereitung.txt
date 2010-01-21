@@ -1,13 +1,13 @@
 Klausurvorbereitung  AMS
 
-3 Fragen Pos, lokalisationsarten, rel. pos
+3 Fragen Pos, Lokalisationsarten, rel. pos
 Definition service Roboter
 Begriff Autonomie
 Wie können Anwendungsfelder generiert werden 
 keine Verschiedene Roboter lernen
 3 Fragen der Roboternavigation(Selbstlokalisierung)
 Positionsbestimmung Beta Omega Teta scheiß
-genaueres Verfahren zur selbstlokalisierung (Räder beobachten)
+genaueres Verfahren zur Selbstlokalisierung (Räder beobachten)
 Onometrie
 	Wie funktioniert sie
 	Sensorenarten
@@ -19,13 +19,49 @@ Onometrie
 		Arten
 Lokalisierung
 	Markovlokalisierung(Wichtig)
-	Umsetzung in Aria(MonteCarlo)
+	Umsetzung in Aria (Monte Carlo)
 Karten
 	Arten
 Fahrplanung
 	Arten
 	Lokal			Global
-					Potenzialfelder(S.41)
+					Potenzialfelder(S.41) ausrechnen-> Vektorfeld ausrechnen-> value interation
+					
+Teil Loose
+
+1. Vorlesung
+Aufbau Roboter
+vorhandene Sensoren
+grobe Funktionsprinzipen
+2. Vorlesung
+Wie sieht eine maps im Simulator aus
+Grundprinzip des Arnetworking
+GPS 
+	Def.
+	Funktionsweise
+	Kenndaten (Anz. Satelliten)
+	gps84 Ref. Impelementierung
+	gps Protokoll was ist was im Protokoll
+	Was ist UTM Systeme
+	
+Heinsohn
+
+
+Aria-Architektur/ Komponenten als Graphic Folie 2
+Client/ Server mit und ohne Arnetworking
+Syncronisation Folie 23 (welche Pakete werden Abgeschickt mit welchem Inhalt)
+		-> Actions
+	Ebenen der Robotersteuerung
+		-direkt 
+		..
+	Actionen der Aria
+		-allg. Kontrollstukturen
+		-klassische(horizontal,vertikal)vs. Subsumation
+	Folie 22-> was passiert eigentlich wenn dort verschiedene zugriffe auf di Kanaele erfolgen
+			Prioritäten (Formeln) + Aktivierungsgrade
+	
+
+ 
 	
 	
 
