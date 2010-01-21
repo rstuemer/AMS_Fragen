@@ -69,8 +69,8 @@
               </li>
             </ul>
           </li>
-          <li><strong>Encoderart</strong>
-<ul>
+          <li><strong>Odometrische Sensoren (optische) = Encoderart</strong>
+            <ul>
               <li><em>Inkrementelle Encoder: </em>
 <ul>
                   <li>Anzeige der Bewegung einer Achse Rades durch eine Impulsfolge<br />
@@ -86,9 +86,9 @@
               <li><em>Absolute Encoder:</em>
 <ul>
                   <li> Anzeige der Position einer Achse durch eine Postionskodierung<br />
-                    </li>
+                  </li>
                   <li> 1 Bit/Spur ==&gt; Baugröße<br />
-                    </li>
+                  </li>
                   <li> Bsp: Binärcode-Encoder, GrayCode-Encoder</li>
                 </ul>
               </li>
@@ -109,11 +109,10 @@
               <li>Entfernungsfehler: Fehler beim Zurücklegen einer geraden Strecke<br />
               </li>
               <li>Drehfehler: Fehler beim Drehen des Roboters<br />
-                </li>
+              </li>
               <li>Driftfehler: Orientierungsfehler beim Zurücklegen einer geraden Strecke </li>
             </ul>
           </li>
-          <li><strong>Sensorenarten</strong></li>
           <li><strong>systematische und unsystematische fehler</strong>
             <ul>
               
@@ -156,10 +155,54 @@
                   </li>
                 </ul>
               </li>
-              <li></li>
             </ul>
           </li>
-          <li>4 massnahmen um die fehler im griff zu haben</li>
+          <li><strong>4 massnahmen um die fehler im griff zu haben</strong>
+<ol>
+              <li>Geeignete Odometrieräder</li>
+              <li>Kalibrierung
+                <ul>
+                  <li>reduziert systematische Fehler<br />
+                  </li>
+                  <li>Beispiel: Entfernungsfehler beim Pioneer<br />
+                    <ul>
+                      <li> Mehrmalige Testfahren mit Odometrie- und manueller Wegmessung<br />
+                        </li>
+                      <li> Stichprobe -&gt; fährt im Mittel x% zu weit oder zu kurz<br />
+                        </li>
+                      <li> Anpassung des Umrechnungsfaktors c (c * Ticks = Weglänge)<br />
+                        </li>
+                      <li> DistConvFactor in Parameterfiles *.p</li>
+                    </ul>
+                  </li>
+                </ul>
+</li>
+              <li>Verwendung von Richtungssensoren
+                <ul>
+                  <li>Richtung durch <em>relative</em> Messung (Gyroskope, Winkelgeschwindigkeit)
+                    oder besser<br />
+                  </li>
+                  <li>Richtung durch <em>absolute</em> Messung</li>
+                </ul>
+</li>
+              <li>Abgleich mit Wahrnehmung (Beste Variante) 
+                <ul>
+                  <li>Ständiger Abgleich der geschätzten Position mit aktueller Wahrnehmung der
+                  Umgebung</li>
+                  <li>Landmarkennavigation, Probabilisitsche Lokalisierung in ARNL/ARIA</li>
+                  <li>Inertial Navigation Systems (INS)<br />
+                    <ul>
+                      <li>andere Form der relativen Positionierung<br />
+                        </li>
+                      <li>Schiffe, Flugzeuge, offRoad<br />
+                        </li>
+                      <li>Messung von Geschwindigkeit, Beschleunigung, Orientierung</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+</li>
           <li><strong>Traegheitsvariation</strong></li>
         </ul>
       </li>
