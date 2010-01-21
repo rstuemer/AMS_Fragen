@@ -9,22 +9,29 @@
 <h1>klausur ams</h1>
 <p>3 fragen pose, lokalisierungsarten, rel.pos.</p>
 <p>odimetrie, sensoren, pqe, Codes, Bewegungsmodell, Fehlerquellen, Odemetrie, Fehlermodellierung,</p>
-<p>
 <ul>
+  <li>Definition service Roboter</li>
   <li>erklaeren sie  Autonomie</li>
-  <li>drei arten der selbstlokalisierung 
+  <li>Wie koennen Anwendungsfelder generiert werden</li>
+  <li>keine Verschiedene Roboter lernen </li>
+  <li>3 Fragen der Roboternavigation(Selbstlokalisierung)
     <ul>
-      <li>rel. Positionierung: <strong>Odemetrie </strong>
-<ul>
-          <li>was gibt es fuer sensoren) </li>
+      <li>rel. Positionierung: <strong>Odemetrie</strong>
+        <ul>
+          <li>was ist Odemetrie</li>
+          <li>Encoderart(Graycode etc.)</li>
+          <li>Wie wird aus der alten Pos die neue berechnet + Fehlerquellen</li>
+          <li>Sensorenarten</li>
           <li>systematische und unsystematische fehler</li>
           <li>4 massnahmen um die fehler im griff zu haben</li>
+          <li><strong>Traegheitsvariation</strong></li>
         </ul>
       </li>
-      <li>rel. Positionierung: <strong>Traegheitsvariation</strong></li>
       <li>abs. Positionierung (was ist das)
         <ul>
-          <li>probabilistische lok. (markov), (wie in aria)</li>
+          <ul>
+            <li>probabilistische lok. (markov-monte carlo ), (wie in aria)</li>
+          </ul>
         </ul>
       </li>
     </ul>
@@ -40,23 +47,17 @@
   </li>
   <li>was ist eine karte, 
         welche zwei arten gibt es<br />
-    <ul>
+<ul>
           <li>geometrische<br />
       </li>
-          <li>topologische<br />
-      </li>
-          <li>karten in aria</li>
+          <li>topologische karten in aria</li>
     </ul>
   </li>
   <li>fahrplanung:<br />
     <ul>
-      <li>lokale <br />
+      <li>lokale = r. navigiert innerhalb seiner sensorreichweite<br />
       </li>
-      <li>r. navigiert innerhalb seiner sensorreichweite<br />
-      </li>
-      <li>und globale<br />
-      </li>
-      <li>hat karte aber kann es nicht direkt sehen und plant in dieser karte</li>
+      <li> globale = hat karte aber kann es nicht direkt sehen und plant in dieser karte</li>
     </ul>
   </li>
   <li>kriterien fuer einen guten pfad<br />
@@ -86,53 +87,64 @@
         </li>
     </ul>
   </li>
+  <li>2. Vorlesung</li>
   <li>simulator<br />
     <ul>
-      <li>was is ne map aus sicht des simulators<br />
+      <li>Wie sieht eine maps im Simulator aus<br />
         </li>
     </ul>
   </li>
   <li>grundprinzip des arnetworking<br />
     </li>
-  <li>gps -&gt; wie fkt. es (3 satelierten und einer fuer zeit, bla)<br />
-    </li>
+  <li>gps
+    <ul>
+      <li>Def.<br />
+</li>
+      <li>Funktionsweise<br />
+      </li>
+      <li>Kenndaten (Anz. Satelliten)<br />
+      </li>
+    </ul>
+  </li>
   <li>gps std Protokoll lesen koennen<br />
     </li>
-  <li>gds84 , referenzelipsuiden<br />
+  <li>gds84 , referenzelipsuiden, (Ref. Impelementierung)<br />
     </li>
-  <li>was ist utm systeme</li>
+  <li>was sind utm systeme</li>
 </ul>
 <p>-------------------------------HEINSOHN-----------------------------------------</p>
 <ul>
-  <li>aria architektur (Folie 2 Graphik lernen!!!!!)<br />
+  <li>aria architektur / Komponenten(Folie 2 Graphik lernen!!!!!)<br />
     </li>
   <li>client server arch. mit und auch ohne arNetworking<br />
     </li>
   <li>syncronisierungszyklus folie 23 (welche pakete werden abgeschickt mit welchem inhalt)<br />
     <ul>
-      <li>-&gt; actions<br />
+      <li> actions<br />
         </li>
     </ul>
   </li>
   <li>3 ebenen der robotersteuerung<br />
     <ul>
-      <li>direkte<br />
-        - <br />
-        -<br />
-        </li>
+      <li>direkte</li>
+      <li>...</li>
+      <li><br />
+      </li>
     </ul>
   </li>
-  <li>aktionen in aria<br />
-    </li>
-  <li>allg. kontrollstruktur <br />
+  <li>aktionen in aria 
     <ul>
+      <li>allg. kontrollstruktur <br />
+      </li>
       <li>klassische(horizontal, vertikal) vs subsumtion<br />
-        </li>
-      <li>Folie 22 -&gt; was passiert eigentlich wenn dort verschiedene zugriffe auf die 		kanaele erfolgen<br />
-        </li>
-      <li>PRIORITAETEN + AKTIVIERUNGSGRADE (Formeln)</li>
+      </li>
     </ul>
   </li>
+  <li>Subsumation: Folie 22 -&gt; was passiert eigentlich wenn dort verschiedene zugriffe auf die 		kanaele erfolgen<br />
+  </li>
+  <ul>
+    <li>PRIORITAETEN + AKTIVIERUNGSGRADE (Formeln)</li>
+  </ul>
 </ul>
 </body>
 </html>
