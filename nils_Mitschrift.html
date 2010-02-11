@@ -14,6 +14,9 @@
 	font-weight: bolder;
 	color: #F00;
 }
+.green {
+	color: #090;
+}
 -->
 </style>
 </head>
@@ -221,6 +224,8 @@
       </li>
       <li><span class="importantes">lokalisierungsarten</span><br /><img src="lokalisierungsarten.png" />
       </li>
+      <li class="importantes">relative Pos<br />
+      <img src="relPos.png"  /></li>
       <li><strong>Absolute Positionierung anhand von Landmarken</strong>
         <ul>
           <li><em>Grundidee:</em>            Positionsbestimmung anhand natürlicher oder künstlicher Landmarken mit bekannter Position<br />
@@ -243,15 +248,15 @@
           </li>
           <li>ARTEN:<img src="artenLandmarken.png" /></li>
           <li><strong>beispiele nat landmarken</strong>
-<ul>
-              <li>Bergspitzen, einzelne Bäume,<br />
-              </li>
-              <li>Wände, Kanalabzweige, Bürotüren, Ecken, Säulen,<br />
-              </li>
-              <li>Deckenbeleuchtung, Sterne, Sonne<br />
-                </li>
-              <li>Magnetfeld, Flüsse, Strömungen und vieles mehr</li>
-            </ul>
+  <ul>
+    <li>Bergspitzen, einzelne Bäume,<br />
+      </li>
+    <li>Wände, Kanalabzweige, Bürotüren, Ecken, Säulen,<br />
+      </li>
+    <li>Deckenbeleuchtung, Sterne, Sonne<br />
+      </li>
+    <li>Magnetfeld, Flüsse, Strömungen und vieles mehr</li>
+    </ul>
           </li>
           <li><span class="importantes">lm-algorithmus<br />
           </span><img src="lmAlgorithmus.png"  /></li>
@@ -301,7 +306,8 @@
       <li ><span class="importantes">karten</span>
         <ul>
           <li><img src="karten25.png"  /><br /><img src="karten26.png"  /><br /><img src="karten27.png"  /><br /><img src="karten28.png"  /><br /><img src="karten29.png"  /><br /><img src="karten213.png"  /><br /></li>
-          <li><span class="importantes">Visibility Graph</span><img src="VisibilityGraph.png" /></li><li><strong><em>Karten in ARIA</em></strong>
+          <li><span class="importantes">Visibility Graph<br />
+          </span><img src="VisibilityGraph.png" /></li><li><strong><em>Karten in ARIA</em></strong>
 <ul>
 <li>Geometrische Karte mit topologischen Elementen<br />
                 Verwendet als<br />
@@ -363,7 +369,7 @@
   <li>Def <span class="grey">Serviceroboter!2, Autonomie5</span>, Automatik3, Arten13, Einsatzkriterien18<br />
   </li>
   <li>NAV1</li>
-  <li>3 Fragen1.4, Pose1.5,<span class="grey"> Lokalisierungsarten!1.6</span>, rel. Pos.<span class="importantes">!</span>1.7,<br />
+  <li>3 Fragen1.4, Pose1.5,<span class="grey"> Lokalisierungsarten!1.6</span>, rel. <span class="grey">Pos.!1.7</span>,<br />
   </li>
   <li><span class="grey">Odometrie1.8</span>, Sensoren1.9, PQE1.10, <span class="grey">Codes1.13</span>, Bewegungsmodell1.16,<span class="grey"> Fehlerquellen1.19, </span>Fehler-Modellierung1.20, Positionsunsicherheit1.23, <span class="grey">Gegenmaßnahmen 1-4 1.25..1.27</span>, INS1.31<br />
   </li>
@@ -393,35 +399,161 @@
   <li>wie ist roboter aufgebaut<br />
     <ul>
       <li>sensoren -&gt; welche sind drin<br />
-        </li>
-      <li>grobe funktionsprinzipien<br />
-        </li>
+        <img src="aufbauPioneer.png" /><br />
+      </li>
+      <li>grobe funktionsprinzipien
+        <ul>
+          <li>client-server ...<br />
+          </li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li>2. Vorlesung</li>
   <li>simulator<br />
     <ul>
-      <li>Wie sieht eine maps im Simulator aus<br />
-        </li>
+      <li>Wie sieht eine maps im Simulator aus
+        <ul>
+          <li>na wie ne karte... bla<br />
+          </li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li>grundprinzip des arnetworking<br />
+  <img src="arNetworking.png"  />
     </li>
-  <li>gps
+  <li><a href="http://de.wikipedia.org/wiki/Global_Positioning_System">gps</a>
     <ul>
-      <li>Def.<br />
-</li>
-      <li>Funktionsweise<br />
+      <li>Def.
+        <ul>
+          <li> ist ein globales Navigationssatellitensystem zur Positionsbestimmung und Zeitmessung.<br />
+          </li>
+        </ul>
       </li>
-      <li>Kenndaten (Anz. Satelliten)<br />
+      <li>Funktionsweise
+        <ul>
+          <li>Das Prinzip der Satellitenortung beschreibt der Artikel Globales Navigationssatellitensystem.<br />
+          </li>
+          <li>GPS basiert auf Satelliten, die mit kodierten Radiosignalen ständig ihre aktuelle Position und die genaue Uhrzeit ausstrahlen. Aus den Signallaufzeiten können spezielle GPS-Empfänger dann ihre eigene Position und Geschwindigkeit berechnen. Theoretisch reichen dazu die Signale von drei Satelliten aus, welche sich oberhalb ihres Abschaltwinkels befinden müssen, da daraus die genaue Position und Höhe bestimmt werden kann. In der Praxis haben aber GPS-Empfänger keine Uhr, die genau genug ist, um die Laufzeiten korrekt messen zu können. Deshalb wird das Signal eines vierten Satelliten benötigt, mit dem dann auch die genaue Zeit im Empfänger bestimmt werden kann. Zur Mindestanzahl der benötigten Satelliten siehe Artikel GPS-Technik.<br />
+          </li>
+          <li>Mit den GPS-Signalen lässt sich aber nicht nur die Position, sondern auch die Geschwindigkeit des Empfängers bestimmen. Dieses erfolgt im Allgemeinen über Messung des Dopplereffektes oder die numerische Differenzierung des Ortes nach der Zeit. Die Bewegungsrichtung des Empfängers kann ebenfalls ermittelt werden und als künstlicher Kompass oder zur Ausrichtung von elektronischen Karten dienen.<br />
+          </li>
+          <li>Damit ein GPS-Empfänger immer zu mindestens vier Satelliten Kontakt hat, werden insgesamt mindestens 24 Satelliten eingesetzt, die die Erde jeden Sternentag zweimal in einer Höhe von 20 183 km umkreisen. Jeweils mindestens vier Satelliten bewegen sich dabei auf jeweils einer der sechs Bahnebenen, die 55° gegen die Äquatorebene inkliniert (geneigt) sind und gegeneinander um jeweils 60° verdreht sind. Ein Satellit ist damit alle 23 Stunden 55 Minuten und 56,6 Sekunden über demselben Punkt der Erde.<br />
+          </li>
+          <li>Ein Satellit hat eine erwartete Lebensdauer von 7,5 Jahren, doch funktionieren die Satelliten häufig deutlich länger. Um Ausfälle problemlos zu verkraften, wurden daher bis zu 31 Satelliten in den Orbit gebracht, sodass man auch bei schlechten Bedingungen fünf oder mehr Satelliten verwenden kann. Aktuell benötigt man 60 Tage für das Austauschen eines Satelliten; aus Kostengründen versucht man, diesen Zeitraum auf zehn Tage zu senken und somit die Satellitenanzahl auf 25 zu reduzieren. [1]<br />
+          </li>
+        </ul>
+      </li>
+      <li><span class="grey">Kenndaten (Anz. Satelliten)</span><br />
       </li>
     </ul>
   </li>
-  <li>gps std Protokoll lesen koennen<br />
-    </li>
-  <li>gds84 , referenzelipsuiden, (Ref. Impelementierung)<br />
-    </li>
-  <li>was sind utm systeme</li>
+  <li>gps std Protokoll lesen koennen
+    <ul>
+      <li>Bei den NMEA-Daten handelt es sich um ASCII-basierte Datensätze, die jeweils 80 druckbare Zeichen umfassen können. Jeder Datensatz wird durch eine Kombination aus Wagenrücklauf und Zeilenvorschub abgeschlossen (&lt;CR&gt;&lt;LF&gt;).<br />
+        Der Anfang eines Datensatzes wird durch ein '$' markiert. Nach dem '$' folgt die Geräte-ID (normalerweise zwei Zeichen) und die Datensatz-ID (meist drei Zeichen) als eine Zeichenkette. Anschließend werden jeweils durch Kommata abgetrennt die Datenfelder gemäß der Datensatzdefinition angehängt. Optional kann an die Daten eine durch ein '*' abgetrennte hexadezimale Prüfziffer angehängt werden. Diese wird durch die XOR-Verknüpfung der ASCII-Werte aller Zeichen zwischen dem $ und dem * errechnet.
+        <ul>
+          <li>$GP<span class="green">RMC</span>,085330.00,A,5224.62787,N,01232.22431,E,0.008,140.48,100605,,,A*69
+<ul>
+              <li>RMC - Recommended Minimum data: Recommended minimum specific GNSS
+                data<br />
+              </li>
+            </ul>
+          </li>
+          <li>$GP<span class="green">VTG</span>,140.48,T,,M,0.008,N,0.014,K,A*39
+<ul>
+              <li>VTG - Course over ground and Ground speed: Course over ground and ground
+                speed<br />
+              </li>
+            </ul>
+          </li>
+          <li>$GP<span class="green">GGA</span>,085330.00,52
+<ul>
+              <li>GGA - GPS fix data: Global positioning system fix data<br />
+              </li>
+            </ul>
+          </li>
+          <li>$GP<span class="green">RMC</span>,085400.00,A,5224.62780,N,01232.22453,E,0.004,140.48,100605,,,A*62
+<ul>
+              <li>RMC - Recommended Minimum data: Recommended minimum specific GNSS
+                data<br />
+              </li>
+            </ul>
+          </li>
+          <li>$GP<span class="green">VTG</span>,140.48,T,,M,0.004,N,0.008,K,A*38
+<ul>
+              <li>VTG - Course over ground and Ground speed: Course over ground and ground
+                speed<br />
+              </li>
+            </ul>
+          </li>
+          <li>$GP<span class="green">GGA</span>,085400.00,5224.62780,N,01232.22453,E,1,7,1.44,47.2,M,45.7,M,,*5E
+<ul>
+              <li>GGA - GPS fix data: Global positioning system fix data - <span class="importantes">unten erklaert</span><br />
+              </li>
+            </ul>
+          </li>
+          <li>$GP<span class="green">GSA</span>,A,3,37,20,11,01,25,14,23,,,,,,2.24,1.44,1.72*07
+<ul>
+              <li>GSA - GPS DOP and Active satellites: GNSS DOP and active satellites<br />
+              </li>
+            </ul>
+          </li>
+          <li>$GP<span class="green">GSV</span>,3,1,11,24,31,296,,37,27,169,41,07,28,309,,20,55,253,50*7C
+<ul>
+              <li>GSV - GPS Satellites in View: GNSS satellites in view<br />
+              </li>
+            </ul>
+          </li>
+          <li>$GP<span class="green">GSV</span>,3,2,11,19,10,174,,11,74,169,49,28,05,267,,01,57,089,47*7E
+<ul>
+              <li>GSV - GPS Satellites in View: GNSS satellites in view<br />
+              </li>
+            </ul>
+          </li>
+          <li>$GP<span class="green">GSV</span>,3,3,11,25,18,104,45,14,29,048,41,23,13,196,42*4F
+<ul>
+              <li>GSV - GPS Satellites in View: GNSS satellites in view<br />
+              </li>
+            </ul>
+          </li>
+          <li>$GP<span class="green">GLL</span>,5224.62780,N,01232.22453,E,085400.00,A,A*6A
+<ul>
+              <li>GLL - Latitude and longitude, with time of position fix and status:<br />
+                Geographic position - latitude/longitude<br />
+              </li>
+            </ul>
+          </li>
+          <li>$GP<span class="green">ZDA</span>,085400.00,10,06,2005,00,00*6F
+<ul>
+              <li>ZDA Time and Date: Time and date</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><br /><img src="gpsProtokoll.png" />
+      </li>
+    </ul>
+  </li>
+  <li><a href="http://de.wikipedia.org/wiki/World_Geodetic_System">wgs84</a> , </li>
+  <li>referenzelipsuiden, (Ref. Impelementierung)
+    <ul>
+      <li>Ein Referenzellipsoid ist ein abgeflachtes, symmetrisches Ellipsoid,<br />
+        das als Annäherung an die &quot;ideale Erdfigur&quot; in einer bestimmten Region<br />
+      dient.</li>
+      <li> Ein solches Ellipsoid entsteht durch Rotation einer Ellipse um ihre kleine<br />
+        Achse.<br />
+      </li>
+    </ul>
+  </li>
+  <li><a href="http://de.wikipedia.org/wiki/UTM-Koordinatensystem">was sind utm systeme</a>
+    <ul>
+      <li>Universal Transverse Mercator Projektion</li>
+      <li>Das UTM-System (von englisch Universal Transverse Mercator) teilt die besiedelten Teile der Erde (von 80° Süd bis 84° Nord) in 6° breite vertikale Zonen auf, welche dann einzeln mit der jeweils günstigsten transversalen Mercator-Projektion verebnet und mit einem kartesischen Koordinatensystem überzogen werden. </li>
+      <li></li>
+    </ul>
+  </li>
 </ul>
 <p>-------------------------------HEINSOHN-----------------------------------------</p>
 <ul>
@@ -437,8 +569,8 @@
   </li>
   <li>3 ebenen der robotersteuerung<br />
     <ul>
-      <li>direkte</li>
-      <li>...</li>
+      <li>direkte Kommandos</li>
+      <li>bewegungsfunktionen</li>
       <li><br />
       </li>
     </ul>
