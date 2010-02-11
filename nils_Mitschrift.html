@@ -3,11 +3,24 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Untitled Document</title>
+<style type="text/css">
+<!--
+.grey {
+	color: #999;
+	text-decoration: line-through;
+}
+.importantes {
+	font-size:xx-large;
+	font-weight: bolder;
+	color: #F00;
+}
+-->
+</style>
 </head>
 
 <body>
 <h1>klausur ams</h1>
-<p>-------------boersch--------------------</p>
+<p>-------------Boersch--------------------</p>
 <p>3 fragen pose, lokalisierungsarten, rel.pos.</p>
 <p>odimetrie, sensoren, pqe, Codes, Bewegungsmodell, Fehlerquellen, Odemetrie, Fehlermodellierung,</p>
 <ul>
@@ -226,9 +239,22 @@
                 Entfernungsdifferenz zweier Landmarken, Detektionsbereich o.ä.)</li>
             </ul>
           </li>
+          <li>ARTEN:<img src="artenLandmarken.png" /></li>
+          <li><strong>beispiele nat landmarken</strong>
+<ul>
+              <li>Bergspitzen, einzelne Bäume,<br />
+              </li>
+              <li>Wände, Kanalabzweige, Bürotüren, Ecken, Säulen,<br />
+              </li>
+              <li>Deckenbeleuchtung, Sterne, Sonne<br />
+                </li>
+              <li>Magnetfeld, Flüsse, Strömungen und vieles mehr</li>
+            </ul>
+          </li>
+          <li><span class="importantes">lm-algorithmus</span><img src="lmAlgorithmus.png"  /></li>
         </ul>
       </li>
-      <li><strong>Probabilistische Positionierung</strong>
+      <li><strong class="importantes">Probabilistische Positionierung</strong>
         <ul>
           <li>leistungsfähiger, verbreiteter Ansatz<br />
           </li>
@@ -238,6 +264,35 @@
           <li>in ARIA umgesetzt in ARNL, Methode: Monte Carlo Localization</li>
         </ul>
       </li>
+      <li><span class="importantes">MARKOV</span>
+<ul>
+          <li>Das Ziel der Markov Lokalisierung ist es, Wahrscheinlichkeiten fur das Eintreten
+          zukunftiger Ereignisse anzugeben. </li>
+          <li>Die aktuelle Position hangt nur von der vorhergehenden<br />
+          </li>
+          <li>Position und dem Bewegungsbefehl ab und die aktuelle Beobachtung
+            hangt nur von der aktuellen Position ab. </li>
+          <li>Es ist ein zellbasiertes Verfahren bei dem<br />
+            jeder Zelle Wahrescheinlichkeitswert oder Belief zugeordnet wird. [Zweigle] </li>
+          <li>Jede Bewegung
+            des Roboters verschiebt die Wahrscheinlichkeiten und streut sie und jede Messung von Merkmalen der Umgebung andert die Wahrscheinlichkeiten. </li>
+          <li>Wenn die
+            Position unbekann ist erfolgt eine Gleichverteilung. Das Problem dabei ist, dass alle Werte(Zellen) nach jeder Bewegung neu berechnet werden muessen </li>
+          <li>Es gibt nur eine mogliche Position des Roboters und eine unsicherheit wird dabei
+            nicht reprasentiert.</li>
+          <li><strong>Grundidee:</strong><br />
+            <ul>
+              <li>Belief als Wahrscheinlichkeitsverteilung,<br />
+                </li>
+              <li>die sich bei Bewegung und Wahrnehmung ändert.</li>
+            </ul>
+          </li>
+          <li><img src="repWahrscheinlichkeitsverteilung.png"  /></li>
+          <li><img src="andy1.png"  /><img src="andy2.png"  /><img src="andy3.png"  /></li>
+          <li>mcl<br /><img src="mcl.png"  /></li>
+          <li><span class="importantes">andy in mcl</span><br /><img src="andymcl.png"  /></li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
@@ -245,8 +300,9 @@
   <img src="x.png" /><br />
 </p>
 <ul>
-  <li>Karten (Weltmodell, eine Wissensrepräsentation)<br />
-<ul>
+  <li><strong>Karten (Weltmodell, eine Wissensrepräsentation)<br />
+  </strong>
+    <ul>
       <li><strong><em>geometrische</em> </strong><em><strong>Karten</strong></em>
         <ul>
           <li>Gittermodell mit euklidischen Koordinaten<br />
@@ -329,7 +385,7 @@
           </li>
     </ul>
   </li>
-  <li>fahrplanung:<br />
+  <li><strong>Fahrplanung</strong><br />
     <ul>
       <li>lokale = r. navigiert innerhalb seiner sensorreichweite<br />
       </li>
@@ -347,7 +403,30 @@
     </ul>
   </li>
   <li>potentialfeld ausrechnen -&gt; vektorfeld ausrechnen -&gt; value iteration<br />
-    folie 41<br />
+  folie 41</li>
+  <li>Def <span class="grey">Serviceroboter!2, Autonomie5</span>, Automatik3, Arten13, Einsatzkriterien18<br />
+  </li>
+  <li>NAV1</li>
+  <li>3 Fragen1.4, Pose1.5, Lokalisierungsarten!1.6, rel. Pos.!1.7,<br />
+  </li>
+  <li><span class="grey">Odometrie1.8</span>, Sensoren1.9, PQE1.10, <span class="grey">Codes1.13</span>, Bewegungsmodell1.16,<span class="grey"> Fehlerquellen1.19, </span>Fehler-Modellierung1.20, Positionsunsicherheit1.23, <span class="grey">Gegenmaßnahmen 1-4 1.25..1.27</span>, INS1.31<br />
+  </li>
+  <li><span class="grey">Abs. Positionierung!1.32, LM, Arten1.33</span>, <span class="grey">Bsp. nat. Landmarken1.34</span>, ISR-2D1.46, <span class="grey">LM-Algorithmus!1.49</span><br />
+  </li>
+  <li><span class="grey">Prob. Lokalisierung!1.53</span>, ARNL1.54, <span class="grey">Markov-Lokalisierung!!1.55</span>, <span class="grey">Grundidee1.56</span>, <span class="grey">Repräsentation der W-Verteilung1.57</span>, <span class="grey">Multiple Hypothesen1.59, Andy!1.62-64</span>, <span class="grey">MCL1.65, Andy in MCL!1.68</span><br />
+  </li>
+  <li>NAV2</li>
+  <li>Karten!2.5+2.6, Geom. Karten!2.7+2.8, Probleme geom. Karten2.9, Topologische Karten!2.13, Karten in ARIA2.17<br />
+  </li>
+  <li>Lokale und globale Nav.2.26, Optimalitätskriterien2.27, Visibility-Graph!2.30,<br />
+  </li>
+  <li>Potentialfelder2.39..42, Vektorfeld, komplettes Beispiel, Value iteration*<br />
+  </li>
+  <li>ALV-Grundidee*</li>
+  <li> </li>
+  <li>! wichtige Folie</li>
+  <li>* interessantes Detail</li>
+  <li><br />
   </li>
 </ul>
 <p>------------------------------------LOOSE-----------------------------------------<br />
